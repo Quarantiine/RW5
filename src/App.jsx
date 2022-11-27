@@ -1,8 +1,4 @@
 function Body() {
-  return (
-    <div className="main-body-container">
-
-    </div>
-  );
+  return <></>;
 }
 export default Body;
