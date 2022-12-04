@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import DesktopTabletNavigationBar from "./DesktopTabletNavigationBar";
 import MobileNavigationBar from "./MobileNavigationBar";
+import { useCallback } from "react";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useCallback } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 function NavigationBar() {
@@ -28,24 +28,6 @@ function NavigationBar() {
 
     return () => clearInterval(interval);
   });
-
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.timeline({}).to(".main-nav", {
-        scrollTrigger: {
-          // markers: true,
-          start: "4.1%",
-          end: "bottom",
-          scrub: true,
-        },
-        css: {
-          position: "fixed",
-          top: 0,
-        },
-      });
-    });
-    return () => ctx;
-  }, []);
 
   return (
     <>
@@ -94,7 +76,7 @@ function NavigationBar() {
           </div>
         </div>
       </div>
-      <div className="main-nav relative w-full">
+      <div className="main-nav w-full">
         <div className="z-[50] bg-white w-full h-fit flex justify-around items-center">
           <MobileNavigationBar
             setNavLinkHover={setNavLinkHover}
