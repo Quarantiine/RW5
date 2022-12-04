@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import DesktopTabletNavigationBar from "./DesktopTabletNavigationBar";
 import MobileNavigationBar from "./MobileNavigationBar";
 
@@ -7,11 +7,10 @@ function NavigationBar() {
   const dropdowBox = useRef();
 
   const navbarTailwind = "z-[-1] translate-y-20 opacity-0";
-  const navbarTailwind2 = "z-[0] translate-y-0 opacity-1";
-
+  const navbarTailwind2 = "z-[50] translate-y-0 opacity-100";
   return (
     <>
-      <div className="bg-black w-full h-fit py-4 flex justify-center text-white">
+      <div className="bg-black w-full h-fit py-4 flex justify-center text-white z-50">
         <div className="w-[95%] sm:w-[80%] mx-auto flex lg:flex-row flex-col lg:justify-between justify-center gap-2 items-center">
           <div className="flex justify-center items-center gap-5">
             <div className="flex justify-center items-center text-[14px] gap-2">
