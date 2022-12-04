@@ -1,10 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import DesktopTabletNavigationBar from "./DesktopTabletNavigationBar";
 import MobileNavigationBar from "./MobileNavigationBar";
-import gsap from "gsap/dist/gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useCallback } from "react";
-gsap.registerPlugin(ScrollTrigger);
 
 function NavigationBar() {
   const [navLinkHover, setNavLinkHover] = useState(false);
@@ -12,40 +8,6 @@ function NavigationBar() {
 
   const navbarTailwind = "z-[-1] translate-y-20 opacity-0";
   const navbarTailwind2 = "z-[0] translate-y-0 opacity-1";
-
-  const cbFunction = useCallback(() => {
-    window.addEventListener("click", (e) => {
-      !dropdowBox.current.contains(e.target)
-        ? setNavLinkHover(false)
-        : setNavLinkHover(true);
-    });
-  }, [dropdowBox]);
-
-  useEffect(() => {
-    let interval = setInterval(() => {
-      cbFunction();
-    }, 1000);
-
-    return () => clearInterval(interval);
-  });
-
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.timeline({}).to(".main-nav", {
-        scrollTrigger: {
-          // markers: true,
-          start: "4.1%",
-          end: "bottom",
-          scrub: true,
-        },
-        css: {
-          position: "fixed",
-          top: 0,
-        },
-      });
-    });
-    return () => ctx;
-  }, []);
 
   return (
     <>
