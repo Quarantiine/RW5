@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  transition: 0.3s;
+  transition: 0.15s;
   // transition: .3s cubic-bezier(.03,.92,.69,.54);
   font-family: Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
@@ -21,5 +23,15 @@ html {
 }
 
 // TAILWIND ===
+.base-color {
+  @apply text-[#ff4157];
+}
+.base-color-2 {
+  @apply text-[#162541];
+}
 
 // ===============================
+
+.header-title {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
