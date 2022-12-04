@@ -11,6 +11,7 @@ function HeaderSection() {
           ENJOY YOUR STAY WHILE ON A BUSINESS TRIP
         </h1>
       </div>
+      <div className="bg-black w-[80%] mx-auto relative bottom-24 h-52"></div>
       <BookRegistration />
     </>
   );
