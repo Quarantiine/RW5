@@ -3,14 +3,7 @@ import BookRegistration from "./BookRegistration";
 function HeaderSection() {
   return (
     <>
-      <div
-        className={`header-section z-[-1] flex justify-evenly duration-300 items-center relative [&>.arrow-btns]:opacity-0`}
-      >
-        <div className="absolute left-32 top-10 arrow-btns">
-          <span className="material-symbols-outlined text-white text-5xl">
-            chevron_left
-          </span>
-        </div>
+      <div className="active:cursor-grabbing">
         <div className="bg-[url(https://ld-wp73.template-help.com/wordpress/prod_803/v1/wp-content/uploads/2020/03/slider_picture2.jpg)] w-full h-[670px] bg-cover bg-center bg-no-repeat flex justify-center items-center flex-col text-white active:cursor-grabbing text-center">
           <h3 className="text-xl font-[Times-new-romen] tracking-[10px]">
             COMFORTABLE APARTMENTS
