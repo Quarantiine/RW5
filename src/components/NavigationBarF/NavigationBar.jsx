@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import DesktopTabletNavigationBar from "./DesktopTabletNavigationBar";
 import MobileNavigationBar from "./MobileNavigationBar";
 
@@ -8,6 +8,7 @@ function NavigationBar() {
 
   const navbarTailwind = "z-[-1] translate-y-20 opacity-0";
   const navbarTailwind2 = "z-[50] translate-y-0 opacity-100";
+
   return (
     <>
       <div className="bg-black w-full h-fit py-4 flex justify-center text-white z-50">

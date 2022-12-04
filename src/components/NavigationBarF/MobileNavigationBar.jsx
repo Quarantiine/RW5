@@ -45,21 +45,21 @@ function MobileNavigationBar({
             <div className="flex justify-center items-center relative">
               <div
                 className="flex justify-center items-center gap-3 hover:text-[#ff4157] cursor-pointer"
-                onClick={() => {
-                  setNavLinkHover((btn) => btn);
-                }}
+                // onMouseOver={() => setNavLinkHover(true)}
+                onClick={() => setNavLinkHover((btn) => !btn)}
                 ref={dropdowBox}
               >
                 <p className="">Rooms & Suites</p>
                 <span className="material-symbols-outlined">expand_more</span>
               </div>
               <div
-                onMouseLeave={() => setNavLinkHover(false)}
+                // onMouseLeave={() => setNavLinkHover(false)}
+                onClick={() => setNavLinkHover((btn) => !btn)}
                 className={`absolute top-0 left-0 w-full h-72 bg-transparent duration-300 pt-[25px] dropdown-btn ${
                   navLinkHover ? navbarTailwind2 : navbarTailwind
                 }`}
               >
-                <div className="relative h-full bg-[#162541] text-white flex flex-col justify-center items-start gap-5 p-8 w-fit">
+                <div className="relative z-[51] h-full bg-[#162541] text-white flex flex-col justify-center items-start gap-5 p-8 w-fit">
                   <p
                     className={`${
                       navLinkHover
