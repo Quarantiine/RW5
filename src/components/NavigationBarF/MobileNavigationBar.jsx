@@ -36,8 +36,8 @@ function MobileNavigationBar({
         <div
           className={`absolute top-[95px] w-full bg-white py-10 ${
             hamburgerDropDown
-              ? "top-[95px] z-[0] h-fit overflow-visible"
-              : "top-[0px] z-[-1] h-0 overflow-hidden"
+              ? "top-[95px] z-[0] h-fit overflow-visible opacity-100 cursor-default"
+              : "top-[0px] z-[-1] h-0 overflow-hidden opacity-0"
           }`}
         >
           <div className="flex flex-col justify-center items-center w-[80%] mx-auto sm:w-[80%] [&>p]:cursor-pointer gap-7 text-black">

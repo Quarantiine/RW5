@@ -1,4 +1,4 @@
-import HeaderSection from "./components/HeaderSection";
+import HeaderSection from "./components/HeaderSectionF/HeaderSection";
 import NavigationBar from "./components/NavigationBarF/NavigationBar";
 
 function Body() {
@@ -8,11 +8,10 @@ function Body() {
         <NavigationBar />
         <HeaderSection />
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div>
+        <br />
+        <br />
+      </div>
     </>
   );
 }

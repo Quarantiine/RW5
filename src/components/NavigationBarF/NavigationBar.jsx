@@ -29,7 +29,23 @@ function NavigationBar() {
     return () => clearInterval(interval);
   });
 
-  useEffect(() => {});
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.timeline({}).to(".main-nav", {
+        scrollTrigger: {
+          // markers: true,
+          start: "4.1%",
+          end: "bottom",
+          scrub: true,
+        },
+        css: {
+          position: "fixed",
+          top: 0,
+        },
+      });
+    });
+    return () => ctx;
+  }, []);
 
   return (
     <>
@@ -78,24 +94,26 @@ function NavigationBar() {
           </div>
         </div>
       </div>
-      <div className="bg-white w-full h-fit flex justify-around items-center">
-        <MobileNavigationBar
-          setNavLinkHover={setNavLinkHover}
-          dropdowBox={dropdowBox}
-          navLinkHover={navLinkHover}
-          navbarTailwind2={navbarTailwind2}
-          navbarTailwind={navbarTailwind}
-        />
-        <DesktopTabletNavigationBar
-          setNavLinkHover={setNavLinkHover}
-          dropdowBox={dropdowBox}
-          navLinkHover={navLinkHover}
-          navbarTailwind2={navbarTailwind2}
-          navbarTailwind={navbarTailwind}
-          onClick={() => {
-            setNavLinkHover(true);
-          }}
-        />
+      <div className="main-nav relative w-full">
+        <div className="z-[50] bg-white w-full h-fit flex justify-around items-center">
+          <MobileNavigationBar
+            setNavLinkHover={setNavLinkHover}
+            dropdowBox={dropdowBox}
+            navLinkHover={navLinkHover}
+            navbarTailwind2={navbarTailwind2}
+            navbarTailwind={navbarTailwind}
+          />
+          <DesktopTabletNavigationBar
+            setNavLinkHover={setNavLinkHover}
+            dropdowBox={dropdowBox}
+            navLinkHover={navLinkHover}
+            navbarTailwind2={navbarTailwind2}
+            navbarTailwind={navbarTailwind}
+            onClick={() => {
+              setNavLinkHover(true);
+            }}
+          />
+        </div>
       </div>
     </>
   );
