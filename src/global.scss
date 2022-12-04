@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
 
 * {
   margin: 0;
@@ -33,5 +33,31 @@ html {
 // ===============================
 
 .header-title {
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+.slide-container {
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+
+  .slide-box {
+    scroll-snap-align: start;
+  }
+}
+.slide-container::-webkit-scrollbar {
+  height: 10px;
+}
+.slide-container::-webkit-scrollbar-thumb {
+  background-color: transpent;
+}
+.slide-container::-webkit-scrollbar-track {
+  background-color: transpent;
+}
+
+@media screen and (max-width: 640px) {
+  .slide-container {
+    overflow-x: scroll;
+  }
 }
