@@ -21,7 +21,6 @@ function Body() {
         <br />
         <br />
         <br />
-        
       </div>
     </>
   );
