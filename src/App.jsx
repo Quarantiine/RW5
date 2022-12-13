@@ -1,4 +1,5 @@
 import FreeShippingPopUp from "./components/FreeShippingPopUp";
+import ParentHeroSection from "./components/HeroComponents/ParentHeroSection";
 import ParentNavbar from "./components/NavbarComponents/ParentNavbar";
 
 function Body() {
@@ -7,6 +8,9 @@ function Body() {
 			<div>
 				<FreeShippingPopUp />
 				<ParentNavbar />
+			</div>
+			<div>
+				<ParentHeroSection />
 			</div>
 		</>
 	);
