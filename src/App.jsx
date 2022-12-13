@@ -4,8 +4,10 @@ import ParentNavbar from "./components/NavbarComponents/ParentNavbar";
 function Body() {
 	return (
 		<>
-			<FreeShippingPopUp />
-			<ParentNavbar />
+			<div>
+				<FreeShippingPopUp />
+				<ParentNavbar />
+			</div>
 		</>
 	);
 }
