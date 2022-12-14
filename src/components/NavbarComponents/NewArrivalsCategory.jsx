@@ -4,7 +4,7 @@ const NewArrivalsCategory = () => {
 			<div className="link-img-container flex flex-col justify-center items-center gap-3">
 				<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">
 					<img
-						className="w-full h-full"
+						className="w-full h-full hover:scale-110"
 						src="//cdn.shopify.com/s/files/1/0010/9330/4381/products/glossypearlDuo_300x.jpg?v=1664458796"
 						alt="new arrival img"
 					/>
@@ -15,7 +15,7 @@ const NewArrivalsCategory = () => {
 			<div className="link-img-container flex flex-col justify-center items-center gap-3">
 				<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">
 					<img
-						className="w-full h-full"
+						className="w-full h-full hover:scale-110"
 						src="https://cdn.shopify.com/s/files/1/0010/9330/4381/products/1GlossyPearlHairSerum_300x.jpg?v=1664458838"
 						alt="new arrival img"
 					/>
@@ -28,7 +28,7 @@ const NewArrivalsCategory = () => {
 			<div className="link-img-container flex flex-col justify-center items-center gap-3">
 				<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">
 					<img
-						className="w-full h-full"
+						className="w-full h-full hover:scale-110"
 						src="https://cdn.shopify.com/s/files/1/0010/9330/4381/products/Glossy-Pearl-Hair-Mask_300x.gif?v=1664458816"
 						alt="new arrival img"
 					/>
@@ -39,7 +39,7 @@ const NewArrivalsCategory = () => {
 			<div className="link-img-container flex flex-col justify-center items-center gap-3">
 				<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">
 					<img
-						className="w-full h-full"
+						className="w-full h-full hover:scale-110"
 						src="https://cdn.shopify.com/s/files/1/0010/9330/4381/products/Biotin_CollagenShampooPouch_300x.jpg?v=1653577757"
 						alt="new arrival img"
 					/>

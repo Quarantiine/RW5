@@ -4,7 +4,7 @@ const ValueSetsCategory = () => {
 			<div className="link-img-container flex flex-col justify-center items-center gap-3">
 				<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">
 					<img
-						className="w-full h-full"
+						className="w-full h-full hover:scale-110"
 						src="https://cdn.shopify.com/s/files/1/0010/9330/4381/products/neverdull_box1_300x.jpg?v=1632347867"
 						alt="new arrival img"
 					/>
@@ -15,7 +15,7 @@ const ValueSetsCategory = () => {
 			<div className="link-img-container flex flex-col justify-center items-center gap-3">
 				<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">
 					<img
-						className="w-full h-full"
+						className="w-full h-full hover:scale-110"
 						src="https://cdn.shopify.com/s/files/1/0010/9330/4381/products/UltimateBondingBox_300x.jpg?v=1632348165"
 						alt="new arrival img"
 					/>
@@ -26,7 +26,7 @@ const ValueSetsCategory = () => {
 			<div className="link-img-container flex flex-col justify-center items-center gap-3">
 				<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">
 					<img
-						className="w-full h-full"
+						className="w-full h-full hover:scale-110"
 						src="https://cdn.shopify.com/s/files/1/0010/9330/4381/products/edited-G-LUSETA-2_300x.gif?v=1653665542"
 						alt="new arrival img"
 					/>
@@ -37,7 +37,7 @@ const ValueSetsCategory = () => {
 			<div className="link-img-container flex flex-col justify-center items-center gap-3">
 				<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">
 					<img
-						className="w-full h-full"
+						className="w-full h-full hover:scale-110"
 						src="https://cdn.shopify.com/s/files/1/0010/9330/4381/products/magicwand6pcs_300x.jpg?v=1669684470"
 						alt="new arrival img"
 					/>
