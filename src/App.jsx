@@ -3,16 +3,75 @@ import ParentHeroSection from "./components/HeroComponents/ParentHeroSection";
 import ParentNavbar from "./components/NavbarComponents/ParentNavbar";
 
 function Body() {
-  return (
-    <>
-      <div>
-        <FreeShippingPopUp />
-        <ParentNavbar />
-      </div>
-      <div>
-        <ParentHeroSection />
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className="fixed w-full z-50">
+				<FreeShippingPopUp />
+				<ParentNavbar />
+			</div>
+			<div className="relative top-20">
+				<ParentHeroSection />
+			</div>
+
+			<>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+			</>
+		</>
+	);
 }
 export default Body;
