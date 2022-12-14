@@ -22,6 +22,7 @@ const ParentNavbar = () => {
 	const shopDropDownRef = useRef();
 	const [hideLinks, setHideLinks] = useState(false);
 	const [mobileMenu, setMobileMenu] = useState(false);
+	const [closeWarning, setCloseWarning] = useState(false);
 
 	const shopMouseEnter = () => {
 		setShopDropDown(true);
@@ -118,11 +119,29 @@ const ParentNavbar = () => {
 		return () => mainNavbarCtx.revert();
 	}, []);
 
+	useEffect(() => {
+		const ctx = gsap.context(() => {
+			gsap.to(".warning-pop-up", {
+				translateY: 0,
+			});
+		});
+
+		return () => ctx.revert();
+	}, []);
+
 	return (
 		<>
-			<div className="bg-white w-72 h-24 absolute top-0">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni
-			</div>
+			{!closeWarning && (
+				<div className="warning-pop-up flex bg-yellow-100 w-[600px] gap-5 justify-center z-[105] items-center px-10 text-center py-5 absolute top-20 left-1/2 -translate-x-1/2 border-2 border-yellow-500 rounded-xl text-black -translate-y-96">
+					<p>
+						ITS BEST TO VIEW THE WEBSITE WITH A <span className="italic text-yellow-700">WIDTH OF 1025 OR HIGHER</span>{" "}
+						IF YOU ARE ON A <span className="text-yellow-700">COMPUTER</span>
+					</p>
+					<span className="material-symbols-outlined cursor-pointer" onClick={() => setCloseWarning(true)}>
+						close
+					</span>
+				</div>
+			)}
 			<div className="bg-white main-navbar border-b w-full h-20 flex justify-evenly items-center gap-5 text-black px-3">
 				{!hideLinks && (
 					<div className="flex gap-5">
