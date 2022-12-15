@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import MobileNavbarLinks from "./MobileNavbarLinks";
 
 const MobileNavBar = ({ setMobileMenu, setHideLinks, hideLinks, mobileMenu }) => {
 	const [hideMobileShopLinks, setHideMobileShopLinks] = useState(false);
 	const [mobileShopLinks, setMobileShopLinks] = useState(false);
+	const [mobileShopSubLinks, setMobileShopSubLinks] = useState(false);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -42,91 +44,11 @@ const MobileNavBar = ({ setMobileMenu, setHideLinks, hideLinks, mobileMenu }) =>
 								{mobileMenu && (
 									<>
 										{hideMobileShopLinks && (
-											<div className="flex flex-col justify-center items-start gap-2 relative left-3 top-3 pb-5">
-												<div className="">
-													<a
-														className={`${mobileShopLinks ? "text-2xl" : "text-sm"} font-thin`}
-														onMouseOver={() => setHideMobileShopLinks(true)}
-														onMouseLeave={() => setHideMobileShopLinks(false)}
-														href="/#"
-													>
-														NEW ARRIVALS <span className="material-symbols-outlined text-sm">east</span>
-													</a>
-													<div className="flex justify-start items-center gap-5 relative left-2 py-1">
-														<div className="w-10 h-10 rounded-lg bg-gray-400"></div>
-														<p>Lorem ipsum dolor sit</p>
-													</div>
-												</div>
-												<div className="">
-													<a
-														className={`${mobileShopLinks ? "text-2xl" : "text-sm"} font-thin`}
-														onMouseOver={() => setHideMobileShopLinks(true)}
-														onMouseLeave={() => setHideMobileShopLinks(false)}
-														href="/#"
-													>
-														BESTSELLERS <span className="material-symbols-outlined text-sm">east</span>
-													</a>
-													<div className="flex justify-start items-center gap-5 relative left-2 py-1">
-														<div className="w-10 h-10 rounded-lg bg-gray-400"></div>
-														<p>Lorem ipsum dolor sit</p>
-													</div>
-												</div>
-												<div className="">
-													<a
-														className={`${mobileShopLinks ? "text-2xl" : "text-sm"} font-thin`}
-														onMouseOver={() => setHideMobileShopLinks(true)}
-														onMouseLeave={() => setHideMobileShopLinks(false)}
-														href="/#"
-													>
-														VALUE SETS <span className="material-symbols-outlined text-sm">east</span>
-													</a>
-													<div className="flex justify-start items-center gap-5 relative left-2 py-1">
-														<div className="w-10 h-10 rounded-lg bg-gray-400"></div>
-														<p>Lorem ipsum dolor sit</p>
-													</div>
-												</div>
-												<div className="">
-													<a
-														className={`${mobileShopLinks ? "text-2xl" : "text-sm"} font-thin`}
-														onMouseOver={() => setHideMobileShopLinks(true)}
-														onMouseLeave={() => setHideMobileShopLinks(false)}
-														href="/#"
-													>
-														HAIR NEEDS <span className="material-symbols-outlined text-sm">east</span>
-													</a>
-													<div className="flex justify-start items-center gap-5 relative left-2 py-1">
-														<div className="w-10 h-10 rounded-lg bg-gray-400"></div>
-														<p>Lorem ipsum dolor sit</p>
-													</div>
-												</div>
-												<div className="">
-													<a
-														className={`${mobileShopLinks ? "text-2xl" : "text-sm"} font-thin`}
-														onMouseOver={() => setHideMobileShopLinks(true)}
-														onMouseLeave={() => setHideMobileShopLinks(false)}
-														href="/#"
-													>
-														COLLECTIONS <span className="material-symbols-outlined text-sm">east</span>
-													</a>
-													<div className="flex justify-start items-center gap-5 relative left-2 py-1">
-														<div className="w-10 h-10 rounded-lg bg-gray-400"></div>
-														<p>Lorem ipsum dolor sit</p>
-													</div>
-												</div>
-												<div className="">
-													<a
-														className={`${mobileShopLinks ? "text-2xl" : "text-sm"} font-thin`}
-														onMouseOver={() => setHideMobileShopLinks(true)}
-														onMouseLeave={() => setHideMobileShopLinks(false)}
-														href="/#"
-													>
-														PRODUCT TYPE <span className="material-symbols-outlined text-sm">east</span>
-													</a>
-													<div className="flex justify-start items-center gap-5 relative left-2 py-1">
-														<div className="w-10 h-10 rounded-lg bg-gray-400"></div>
-														<p>Lorem ipsum dolor sit</p>
-													</div>
-												</div>
+											<div className="flex flex-col justify-center items-start gap-0 relative left-3 top-3 pb-5">
+												<MobileNavbarLinks
+													mobileShopLinks={mobileShopLinks}
+													setHideMobileShopLinks={setHideMobileShopLinks}
+												/>
 											</div>
 										)}
 									</>
