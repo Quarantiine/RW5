@@ -37,8 +37,8 @@ const ParentNavbar = () => {
           transition: 0.1,
         });
       });
-      setTimeout(() => setShopDropDown(false), 300);
-    }, 300);
+      setTimeout(() => setShopDropDown(false), 500);
+    }, 400);
   };
 
   const linkDetectionSystem = () => {
