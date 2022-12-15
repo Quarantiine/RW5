@@ -4,7 +4,6 @@ import MobileNavbarLinks from "./MobileNavbarLinks";
 const MobileNavBar = ({ setMobileMenu, setHideLinks, hideLinks, mobileMenu }) => {
 	const [hideMobileShopLinks, setHideMobileShopLinks] = useState(false);
 	const [mobileShopLinks, setMobileShopLinks] = useState(false);
-	const [mobileShopSubLinks, setMobileShopSubLinks] = useState(false);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
