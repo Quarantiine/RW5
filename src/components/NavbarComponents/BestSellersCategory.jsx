@@ -3,13 +3,13 @@ const BestSellersCategory = ({ linkCategory }) => {
     <>
       <span
         onClick={() => linkCategory.current.scrollBy(-400, 0)}
-        className="xl:hidden material-symbols-outlined text-5xl select-none cursor-pointer flex justify-center items-center absolute top-32 text-white border bg-black border-black z-[2] left-48 rounded-full hover:opacity-80"
+        className="xl:hidden material-symbols-outlined text-5xl select-none cursor-pointer flex justify-center items-center absolute top-32 text-white border bg-black border-black z-[2] left-48 rounded-full hover:opacity-50"
       >
         arrow_left
       </span>
       <span
         onClick={() => linkCategory.current.scrollBy(400, 0)}
-        className="xl:hidden material-symbols-outlined text-5xl select-none cursor-pointer flex justify-center items-center absolute top-32 text-white border bg-black border-black z-[2] right-3 rounded-full hover:opacity-80"
+        className="xl:hidden material-symbols-outlined text-5xl select-none cursor-pointer flex justify-center items-center absolute top-32 text-white border bg-black border-black z-[2] right-3 rounded-full hover:opacity-50"
       >
         arrow_right
       </span>
