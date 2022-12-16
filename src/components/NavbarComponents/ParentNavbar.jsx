@@ -104,23 +104,6 @@ const ParentNavbar = () => {
 	}, [hideLinks, setHideLinks]);
 
 	useEffect(() => {
-		const mainNavbarCtx = gsap.context(() => {
-			gsap.to(".main-navbar", {
-				scrollTrigger: {
-					// markers: true,
-					trigger: ".main-navbar",
-					start: "top top",
-					end: "bottom top",
-					scrub: true,
-				},
-				boxShadow: "0px 15px 20px rgba(0,0,0,0.1)",
-			});
-		});
-
-		return () => mainNavbarCtx.revert();
-	}, []);
-
-	useEffect(() => {
 		const ctx = gsap.context(() => {
 			gsap.to(".warning-pop-up", {
 				translateY: 0,
@@ -133,7 +116,7 @@ const ParentNavbar = () => {
 	return (
 		<>
 			{!closeWarning && (
-				<div className="warning-pop-up flex bg-yellow-100 w-[600px] gap-5 justify-center z-[105] items-center px-10 text-center py-5 absolute top-20 left-1/2 -translate-x-1/2 border-2 border-yellow-500 rounded-xl text-black -translate-y-96">
+				<div className="warning-pop-up flex bg-yellow-100 w-[90%] sm:w-[600px] gap-5 justify-center z-[105] items-center px-10 text-center py-5 absolute top-20 left-1/2 -translate-x-1/2 border-2 border-yellow-500 rounded-xl text-black -translate-y-96">
 					<p>
 						ITS BEST TO VIEW THE WEBSITE WITH A <span className="italic text-yellow-700">WIDTH OF 1025 OR HIGHER</span>{" "}
 						IF YOU ARE ON A <span className="text-yellow-700">COMPUTER</span>
@@ -143,7 +126,7 @@ const ParentNavbar = () => {
 					</span>
 				</div>
 			)}
-			<div className="bg-white main-navbar border-b w-full h-20 flex justify-evenly items-center gap-5 text-black px-3">
+			<div className="bg-white main-navbar border border-b w-full h-20 flex justify-evenly items-center gap-5 text-black px-3">
 				{!hideLinks && (
 					<div className="flex gap-5">
 						<span onClick={() => setMobileMenu(true)} className="material-symbols-outlined cursor-pointer text-lg">
