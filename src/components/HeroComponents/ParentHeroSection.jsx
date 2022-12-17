@@ -63,7 +63,7 @@ const ParentHeroSection = () => {
 					</div>
 				) : (
 					<div className="bg-[#ffecf5] w-full lg:w-[800px] text-center xl:w-full h-full z-[1] flex flex-col justify-center items-center gap-8 pt-24 pb-16 px-5">
-						<h1 className="text-7xl font-medium font-[times-new-roman]">TIME TO GLOW</h1>
+						<h1 className="text-7xl font-medium font-[times-new-roman]">Time To Glow</h1>
 						<h3 className="text-4xl font-[times-new-roman]">Glossy Pearl Duo</h3>
 						<p className="text-lg w-[67%] text-gray-500 font-extralight text-center">
 							Specially formulated with pearl extract + nutrient-rich ingredients, this power duo helps reinforce each

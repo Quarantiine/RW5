@@ -42,7 +42,7 @@ const Carousel1 = () => {
 			</span>
 			<div
 				ref={carouselContainer}
-				className={`carousel mt-40 rounded-lg w-[100%] mx-auto h-fit flex flex-col gap-12 justify-center items-center text-black scroll-smooth overflow-hidden`}
+				className={`carousel mt-40 rounded-lg w-[100%] mx-auto h-fit flex flex-col gap-12 justify-center items-center text-black scroll-smooth overflow-y-scroll overflow-hidden`}
 			>
 				<div className="flex flex-col text-center px-5 justify-center items-center gap-5 mx-auto w-full">
 					<h1 className="text-5xl font-[times-new-roman]">The Faves</h1>
