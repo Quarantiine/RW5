@@ -13,7 +13,7 @@ import WhySection from "./components/WhySection";
 
 function Body() {
 	return (
-		<>
+		<div className="mb-20">
 			<Modal />
 			<div className="fixed w-full z-50">
 				<FreeShippingPopUp />
@@ -30,14 +30,7 @@ function Body() {
 			<QuestionSection />
 			<SafetySection />
 			<SocialMediaSection />
-
-			<>
-				<br />
-				<br />
-				<br />
-				<br />
-			</>
-		</>
+		</div>
 	);
 }
 export default Body;
