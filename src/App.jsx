@@ -3,6 +3,7 @@ import Carousel2 from "./components/CarouselComponents/CarouselSection2/Carousel
 import FreeShippingPopUp from "./components/FreeShippingPopUp";
 import ParentHeroSection from "./components/HeroComponents/ParentHeroSection";
 import MarqueeBanner from "./components/MarqueeComponents/MarqueeBanner";
+import Modal from "./components/Modal";
 import ParentNavbar from "./components/NavbarComponents/ParentNavbar";
 import QuestionSection from "./components/QuestionSection";
 import SafetySection from "./components/SafetySection";
@@ -13,6 +14,7 @@ import WhySection from "./components/WhySection";
 function Body() {
 	return (
 		<>
+			<Modal />
 			<div className="fixed w-full z-50">
 				<FreeShippingPopUp />
 				<ParentNavbar />

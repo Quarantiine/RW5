@@ -15,7 +15,7 @@ const NewArrivalsCategory = ({ linkCategory }) => {
 			</span>
 			<div
 				ref={linkCategory}
-				className="link-category flex gap-10 justify-start xl:justify-center items-center w-fit overflow-x-scroll overflow-y-hidden pr-10"
+				className="link-category flex gap-10 justify-start xl:justify-center items-center w-fit overflow-x-scroll overflow-hidden pr-10"
 			>
 				<div className="link-img-container flex flex-col justify-center items-center gap-3">
 					<div className="w-52 h-52 relative bg-pink-100 rounded-xl overflow-hidden mx-auto cursor-pointer flex justify-end items-start">

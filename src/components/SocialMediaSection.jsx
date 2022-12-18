@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialMediaSection = () => {
 	return (
-		<div className="mt-32 flex flex-col justify-center items-center w-[70%] mx-auto text-black gap-10">
+		<div className="mt-32 flex flex-col justify-center items-center w-[80%] mx-auto text-black gap-10">
 			<h1 className="text-4xl text-center">Insta-shop for that Instant Pop</h1>
 			<div className="grid sm:grid-cols-3 gap-10 sm:gap-0 justify-center items-center">
 				<div className="rounded-xl sm:rounded-none sm:rounded-l-xl overflow-hidden grid grid-cols-2 justify-center items-center">

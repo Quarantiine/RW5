@@ -172,7 +172,7 @@ const ParentNavbar = () => {
 				<div
 					onMouseOver={shopMouseEnter}
 					onMouseLeave={shopMouseLeave}
-					className="shop-dropdown bg-white px-5 border-t-1 shadow-md h-fit absolute w-full flex flex-col text-black py-14 z-[100]"
+					className="shop-dropdown bg-white px-5 border-t-1 shadow-md overflow-hidden overflow-y-scroll h-[500px] absolute w-full flex flex-col text-black py-14 z-[100]"
 				>
 					<div className="flex gap-24 justify-center items-start w-[100%] h-full mx-auto">
 						<div className="flex flex-col justify-center items-start gap-5">
@@ -226,12 +226,12 @@ const ParentNavbar = () => {
 						{newArrivalsLink5 && <CollectionCategory linkCategory={linkCategory} />}
 						{newArrivalsLink6 && <ProductTypesCategory linkCategory={linkCategory} />}
 					</div>
-					<div className="line-container relative ml-auto -translate-x-10 translate-y-10">
+					{/* <div className="line-container relative ml-auto -translate-x-10 translate-y-10">
 						<a className="hover:text-[#fabdbd] text-sm font-semibold" href="/#">
 							VIEW ALL NEW ARRIVALS
 						</a>
 						<div className="line bg-[#fabdbd] duration-500 h-[2px] absolute bottom-0"></div>
-					</div>
+					</div> */}
 				</div>
 			)}
 			{mobileMenu && (

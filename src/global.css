@@ -57,3 +57,13 @@ html {
 	scroll-snap-align: center;
 	cursor: pointer;
 }
+
+.shop-dropdown::-webkit-scrollbar {
+	@apply w-1;
+}
+.shop-dropdown::-webkit-scrollbar-thumb {
+	background-color: #000;
+}
+.shop-dropdown::-webkit-scrollbar-track {
+	background-color: #777;
+}
