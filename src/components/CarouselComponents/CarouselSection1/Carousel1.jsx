@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import CarouselCards from "./CarouselCards";
 
 const Carousel1 = () => {
@@ -40,14 +40,14 @@ const Carousel1 = () => {
 			>
 				keyboard_backspace
 			</span>
+			<div className="flex relative top-40 flex-col text-center px-5 justify-center items-center gap-5 mx-auto w-full text-black">
+				<h1 className="text-5xl font-[times-new-roman]">The Faves</h1>
+				<p className="text-xl">Squeaky-clean ingredients. Silky smooth feelings. Luseta. There ain’t no better.</p>
+			</div>
 			<div
 				ref={carouselContainer}
 				className={`carousel mt-40 rounded-lg w-[100%] mx-auto h-fit flex flex-col gap-12 justify-center items-center text-black scroll-smooth overflow-y-scroll overflow-hidden`}
 			>
-				<div className="flex flex-col text-center px-5 justify-center items-center gap-5 mx-auto w-full">
-					<h1 className="text-5xl font-[times-new-roman]">The Faves</h1>
-					<p className="text-xl">Squeaky-clean ingredients. Silky smooth feelings. Luseta. There ain’t no better.</p>
-				</div>
 				<div
 					className={`grid grid-cols-[auto_auto_auto_auto_auto_auto_auto_auto_auto_auto_auto_auto_auto_auto_auto_auto] justify-start items-start gap-10 mx-auto cursor-grab active:cursor-grabbing p-5`}
 					ref={carouselRef}

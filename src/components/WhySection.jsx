@@ -19,7 +19,7 @@ const WhySection = () => {
 			}`}
 		>
 			{!windowWidthCheck && (
-				<div className="flex justify-center items-center w-full h-full z-[2] bg-pink-100">
+				<div className="flex justify-center items-center w-full h-full z-[2] bg-[#fcdfdf]">
 					<div className="flex flex-col justify-center items-center gap-10 w-[80%] bg-white h-fit py-10 rounded-xl text-black">
 						<div className="flex flex-col justify-center items-center gap-5 text-center px-2">
 							<h1 className="mb-2 text-4xl font-serif">Why you’ll love Luseta</h1>
@@ -35,14 +35,14 @@ const WhySection = () => {
 				</div>
 			)}
 			<img
-				className={`w-full h-full object-cover rounded-t-2xl ${
+				className={`w-full h-full object-cover rounded-t-2xl lg:rounded-none ${
 					windowWidthCheck ? "object-top" : "object-center"
 				} hover:scale-110 z-[1]`}
 				src="https://cdn.shopify.com/s/files/1/0010/9330/4381/files/why_you_will_love_luseta_600x.jpg?v=1631739753"
 				alt="why img"
 			/>
 			{windowWidthCheck && (
-				<div className="flex justify-center items-center w-full h-full z-[2] py-12 bg-pink-100 rounded-b-2xl">
+				<div className="flex justify-center items-center w-full h-full z-[2] py-12 bg-[#fcdfdf] rounded-b-2xl">
 					<div className="flex flex-col justify-center items-center gap-10 w-[80%] bg-white h-fit py-10 rounded-xl text-black">
 						<div className="flex flex-col justify-center items-center gap-5 text-center px-2">
 							<h1 className="mb-2 text-2xl sm:text-4xl font-serif">Why you’ll love Luseta</h1>

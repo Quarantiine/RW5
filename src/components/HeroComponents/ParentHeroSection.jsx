@@ -21,7 +21,7 @@ const ParentHeroSection = () => {
 	};
 
 	return (
-		<div className="h-fit sm:h-[600px] overflow-hidden relative">
+		<div className="h-fit sm:h-[600px] xl:h-[800px] overflow-hidden relative">
 			<div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center text-black h-full w-full">
 				{slideNumber === 1 ? (
 					<div className="bg-[#e5deff] w-full lg:w-[800px] text-center xl:w-full h-full z-[1] flex flex-col justify-center items-center gap-8 pt-24 pb-16 px-5">

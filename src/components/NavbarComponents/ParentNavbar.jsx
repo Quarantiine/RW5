@@ -126,9 +126,9 @@ const ParentNavbar = () => {
 					</span>
 				</div>
 			)}
-			<div className="bg-white main-navbar border border-b w-full h-20 flex justify-evenly items-center gap-5 text-black px-3">
+			<div className="bg-white main-navbar border border-b w-full h-20 flex justify-evenly items-center gap-5 text-black px-3 select-none">
 				{!hideLinks && (
-					<div className="flex gap-5">
+					<div className="flex gap-5 select-none">
 						<span onClick={() => setMobileMenu(true)} className="material-symbols-outlined cursor-pointer text-lg">
 							menu
 						</span>

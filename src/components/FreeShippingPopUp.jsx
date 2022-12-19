@@ -18,7 +18,7 @@ const FreeShippingPopUp = () => {
 	return (
 		<>
 			{hide && (
-				<div className="pop-up-container relative bg-gray-100 text-black w-full h-10 flex justify-center items-center">
+				<div className="pop-up-container relative bg-gray-100 text-black w-full h-10 flex justify-center items-center select-none">
 					<p className="absolute left-5 sm:relative sm:left-0">Free shipping on orders over $35</p>
 					<span onClick={timedClose} className="cursor-pointer material-symbols-outlined absolute right-1 sm:right-10">
 						close
