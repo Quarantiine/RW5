@@ -4,8 +4,8 @@ I am not the original creator of this webiste (below) and I only replicated this
 
 HELPERS:
 ------------
-> Daniel
+> * Daniel
 > 
-> ChatGPT
+> * ChatGPT
 
 ### LINK TO ORIGINAL WEBSITE: https://lusetabeauty.com/
