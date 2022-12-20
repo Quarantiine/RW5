@@ -5,6 +5,7 @@ I am not the original creator of this webiste (below) and I only replicated this
 HELPERS:
 ------------
 > Daniel
+> 
 > ChatGPT
 
 ### LINK TO ORIGINAL WEBSITE: https://lusetabeauty.com/
