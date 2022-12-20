@@ -3,7 +3,6 @@ I replicated the website below using React and Tailwind for practice. I replicat
 I am not the original creator of this webiste (below) and I only replicated this website (below) for practice purposes.
 
 HELPERS:
-------------
 > * Daniel
 > 
 > * ChatGPT
