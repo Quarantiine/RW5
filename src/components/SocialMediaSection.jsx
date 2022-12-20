@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
-import { useModalSlideContentCtx, useModalSlideContext, useOpenCloseModalCtx } from "../App";
+import { useEffect } from "react";
+import { useModalSlideContentCtx, useModalSlideContext, useModalSlideNumberCtx, useOpenCloseModalCtx } from "../App";
 
 const SocialMediaSection = () => {
-	const [modalSlideNumber, setModalSlideNumber] = useState(0);
 	const [SMSImages1, SMSImages2, SMSImages3, SMSImages4, SMSImages5, SMSImages6, SMSImages7, SMSImages8, SMSImages9] =
 		useModalSlideContext();
 	const {
@@ -27,6 +26,7 @@ const SocialMediaSection = () => {
 	} = useModalSlideContentCtx();
 
 	const { openCloseModal, setOpenCloseModel } = useOpenCloseModalCtx();
+	const { modalSlideNumber, setModalSlideNumber } = useModalSlideNumberCtx();
 
 	const modal1Content = () => {
 		setSlideModal1(true);
@@ -161,6 +161,7 @@ const SocialMediaSection = () => {
 		setSlideModal7,
 		setSlideModal8,
 		setSlideModal9,
+		setModalSlideNumber,
 	]);
 
 	return (
@@ -173,6 +174,7 @@ const SocialMediaSection = () => {
 							onClick={() => {
 								setOpenCloseModel(true);
 								modal1Content();
+								modalSlideNumber === 0 && modal1Content();
 							}}
 							className="img-1 w-full h-full overflow-hidden relative"
 						>
@@ -185,6 +187,7 @@ const SocialMediaSection = () => {
 							onClick={() => {
 								setOpenCloseModel(true);
 								modal2Content();
+								modalSlideNumber === 1 && modal2Content();
 							}}
 							className="w-full h-full overflow-hidden relative"
 						>
@@ -197,6 +200,7 @@ const SocialMediaSection = () => {
 							onClick={() => {
 								setOpenCloseModel(true);
 								modal3Content();
+								modalSlideNumber === 2 && modal3Content();
 							}}
 							className="w-full h-full overflow-hidden relative"
 						>
@@ -209,6 +213,7 @@ const SocialMediaSection = () => {
 							onClick={() => {
 								setOpenCloseModel(true);
 								modal4Content();
+								modalSlideNumber === 3 && modal4Content();
 							}}
 							className="w-full h-full overflow-hidden relative"
 						>
@@ -222,6 +227,7 @@ const SocialMediaSection = () => {
 						onClick={() => {
 							setOpenCloseModel(true);
 							modal5Content();
+							modalSlideNumber === 4 && modal5Content();
 						}}
 						className="rounded-xl sm:rounded-none overflow-hidden relative grid grid-cols-1 justify-center items-center"
 					>
@@ -236,6 +242,7 @@ const SocialMediaSection = () => {
 							onClick={() => {
 								setOpenCloseModel(true);
 								modal6Content();
+								modalSlideNumber === 5 && modal6Content();
 							}}
 							className="w-full h-full overflow-hidden relative"
 						>
@@ -248,6 +255,7 @@ const SocialMediaSection = () => {
 							onClick={() => {
 								setOpenCloseModel(true);
 								modal7Content();
+								modalSlideNumber === 6 && modal7Content();
 							}}
 							className="w-full h-full overflow-hidden relative"
 						>
@@ -260,6 +268,7 @@ const SocialMediaSection = () => {
 							onClick={() => {
 								setOpenCloseModel(true);
 								modal8Content();
+								modalSlideNumber === 7 && modal8Content();
 							}}
 							className="w-full h-full overflow-hidden relative"
 						>
@@ -272,6 +281,7 @@ const SocialMediaSection = () => {
 							onClick={() => {
 								setOpenCloseModel(true);
 								modal9Content();
+								modalSlideNumber === 8 && modal9Content();
 							}}
 							className="w-full h-full overflow-hidden relative"
 						>

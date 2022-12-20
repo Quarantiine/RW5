@@ -15,6 +15,7 @@ import WhySection from "./components/WhySection";
 const ModalSlideContext = createContext();
 const OpenCloseModalCtx = createContext();
 const ModalSlideContentCtx = createContext();
+const ModalSlideNumberCtx = createContext();
 
 function Body() {
 	const SMSImages = [
@@ -30,6 +31,7 @@ function Body() {
 	];
 
 	const [openCloseModal, setOpenCloseModel] = useState(false);
+	const [modalSlideNumber, setModalSlideNumber] = useState(0);
 
 	const [slideModal1, setSlideModal1] = useState(false);
 	const [slideModal2, setSlideModal2] = useState(false);
@@ -42,63 +44,66 @@ function Body() {
 	const [slideModal9, setSlideModal9] = useState(false);
 
 	return (
-		<ModalSlideContext.Provider
-			value={[
-				SMSImages[0],
-				SMSImages[1],
-				SMSImages[2],
-				SMSImages[3],
-				SMSImages[4],
-				SMSImages[5],
-				SMSImages[6],
-				SMSImages[7],
-				SMSImages[8],
-			]}
-		>
-			<OpenCloseModalCtx.Provider value={{ openCloseModal, setOpenCloseModel }}>
-				<ModalSlideContentCtx.Provider
-					value={{
-						slideModal1,
-						setSlideModal1,
-						slideModal2,
-						setSlideModal2,
-						slideModal3,
-						setSlideModal3,
-						slideModal4,
-						setSlideModal4,
-						slideModal5,
-						setSlideModal5,
-						slideModal6,
-						setSlideModal6,
-						slideModal7,
-						setSlideModal7,
-						slideModal8,
-						setSlideModal8,
-						slideModal9,
-						setSlideModal9,
-					}}
-				>
-					<div className="mb-20">
-						<Modal />
-						<div className="fixed w-full z-50">
-							<FreeShippingPopUp />
-							<ParentNavbar />
+		<ModalSlideNumberCtx.Provider value={{ modalSlideNumber, setModalSlideNumber }}>
+			<ModalSlideContext.Provider
+				value={[
+					SMSImages[0],
+					SMSImages[1],
+					SMSImages[2],
+					SMSImages[3],
+					SMSImages[4],
+					SMSImages[5],
+					SMSImages[6],
+					SMSImages[7],
+					SMSImages[8],
+					SMSImages,
+				]}
+			>
+				<OpenCloseModalCtx.Provider value={{ openCloseModal, setOpenCloseModel }}>
+					<ModalSlideContentCtx.Provider
+						value={{
+							slideModal1,
+							setSlideModal1,
+							slideModal2,
+							setSlideModal2,
+							slideModal3,
+							setSlideModal3,
+							slideModal4,
+							setSlideModal4,
+							slideModal5,
+							setSlideModal5,
+							slideModal6,
+							setSlideModal6,
+							slideModal7,
+							setSlideModal7,
+							slideModal8,
+							setSlideModal8,
+							slideModal9,
+							setSlideModal9,
+						}}
+					>
+						<div className="mb-20">
+							<Modal />
+							<div className="fixed w-full z-50">
+								<FreeShippingPopUp />
+								<ParentNavbar />
+							</div>
+							<div className="relative top-20">
+								<ParentHeroSection />
+								<Sponsors />
+							</div>
+							<Carousel1 />
+							<MarqueeBanner />
+							<Carousel2 />
+							<WhySection />
+							<QuestionSection />
+							<SafetySection />
+							<SocialMediaSection />
 						</div>
-						<div className="relative top-20">
-							<ParentHeroSection />
-							<Sponsors />
-						</div>
-						<Carousel1 />
-						<MarqueeBanner />
-						<Carousel2 />
-						<WhySection />
-						<QuestionSection />
-						<SafetySection />
-						<SocialMediaSection />
-					</div>
-				</ModalSlideContentCtx.Provider>
-			</OpenCloseModalCtx.Provider>
-		</ModalSlideContext.Provider>
+					</ModalSlideContentCtx.Provider>
+				</OpenCloseModalCtx.Provider>
+			</ModalSlideContext.Provider>
+		</ModalSlideNumberCtx.Provider>
 	);
 }
 export function useModalSlideContext() {
@@ -109,5 +114,8 @@ export function useOpenCloseModalCtx() {
 }
 export function useModalSlideContentCtx() {
 	return useContext(ModalSlideContentCtx);
+}
+export function useModalSlideNumberCtx() {
+	return useContext(ModalSlideNumberCtx);
 }
 export default Body;
