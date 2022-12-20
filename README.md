@@ -3,8 +3,8 @@ I replicated the website below using React and Tailwind for practice. I replicat
 I am not the original creator of this webiste (below) and I only replicated this website (below) for practice purposes.
 
 ## HELPERS:
-> * Daniel
+> * Daniel | 90%
 > 
-> * ChatGPT
+> * ChatGPT | 10%
 
 ### LINK TO ORIGINAL WEBSITE: https://lusetabeauty.com/
