@@ -34,7 +34,7 @@ const ModalSlide = ({ image, text1, text2, text3, text4, hashTags, tags }) => {
 	};
 
 	return (
-		<div className="modal-container grid grid-cols-[60%_40%] z-[202] w-full h-[100%] justify-center items-center gap-0 overflow-hidden overflow-y-scroll">
+		<div className="modal-container grid grid-cols-1 sm:grid-cols-[60%_40%] z-[202] w-full h-[100%] justify-center items-center gap-0 overflow-hidden overflow-y-scroll">
 			<img className="h-full object-cover" src={image} alt="modal product img" />
 			{/* {loading && <div className="h-full w-full bg-pink-500 animate-pulse duration-[100]"></div>} */}
 
@@ -76,7 +76,7 @@ const ModalSlide = ({ image, text1, text2, text3, text4, hashTags, tags }) => {
 						{tags && <p className="text-gray-500 cursor-pointer">{tags}</p>}
 					</div>
 
-					<div className="text-center flex flex-wrap justify-center items-center gap-5">
+					<div className="text-center flex flex-wrap justify-center items-center gap-5 mt-5">
 						<img className="w-6 cursor-pointer" src="/images/icons8-facebook.png" alt="social icon" />
 						<img className="w-6 cursor-pointer" src="/images/icons8-gmail.png" alt="social icon" />
 						<img className="w-6 cursor-pointer" src="/images/icons8-twitter.png" alt="social icon" />

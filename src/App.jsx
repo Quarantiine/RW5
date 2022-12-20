@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import Carousel1 from "./components/CarouselComponents/CarouselSection1/Carousel1";
 import Carousel2 from "./components/CarouselComponents/CarouselSection2/Carousel2";
+import Footer from "./components/Footer";
 import FreeShippingPopUp from "./components/FreeShippingPopUp";
 import ParentHeroSection from "./components/HeroComponents/ParentHeroSection";
 import MarqueeBanner from "./components/MarqueeComponents/MarqueeBanner";
@@ -100,6 +101,7 @@ function Body() {
 							<SafetySection />
 							<SocialMediaSection />
 						</div>
+						<Footer />
 					</ModalSlideContentCtx.Provider>
 				</OpenCloseModalCtx.Provider>
 			</ModalSlideContext.Provider>
