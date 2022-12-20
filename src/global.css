@@ -67,3 +67,13 @@ html {
 .shop-dropdown::-webkit-scrollbar-track {
 	background-color: #777;
 }
+
+.modal-container::-webkit-scrollbar {
+	@apply w-1;
+}
+.modal-container::-webkit-scrollbar-thumb {
+	background-color: #000;
+}
+.modal-container::-webkit-scrollbar-track {
+	background-color: #777;
+}
