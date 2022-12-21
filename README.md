@@ -8,4 +8,5 @@
 * Daniel - 95%
 * ChatGPT - 5%
 
-## LINK: https://lusetabeauty.com/
+## ORIGINAL LINK: https://lusetabeauty.com/
+## MY REPLICATION: https://react-web-1-dw.vercel.app/
