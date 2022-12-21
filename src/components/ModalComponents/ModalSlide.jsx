@@ -6,18 +6,7 @@ const ModalSlide = ({ image, text1, text2, text3, text4, hashTags, tags }) => {
 	const [slideBtnClick2, setSlideBtnClick2] = useState(true);
 	const { setOpenCloseModel } = useOpenCloseModalCtx();
 	const { modalSlideNumber, setModalSlideNumber } = useModalSlideNumberCtx();
-	const [
-		SMSImages1,
-		SMSImages2,
-		SMSImages3,
-		SMSImages4,
-		SMSImages5,
-		SMSImages6,
-		SMSImages7,
-		SMSImages8,
-		SMSImages9,
-		SMSImages,
-	] = useModalSlideContext();
+	const [SMSImages] = useModalSlideContext();
 
 	const forward = () => {
 		setSlideBtnClick(true);
@@ -34,7 +23,7 @@ const ModalSlide = ({ image, text1, text2, text3, text4, hashTags, tags }) => {
 	};
 
 	return (
-		<div className="modal-container grid grid-cols-1 h-full sm:grid-cols-[60%_40%] z-[202] w-full h-[100%] justify-center items-center gap-0 overflow-hidden overflow-y-scroll">
+		<div className="modal-container grid grid-cols-1 h-full sm:grid-cols-[60%_40%] z-[202] w-full justify-center items-center gap-0 overflow-hidden overflow-y-scroll">
 			<img className="h-full w-full object-cover" src={image} alt="modal product img" />
 			{/* {loading && <div className="h-full w-full bg-pink-500 animate-pulse duration-[100]"></div>} */}
 
