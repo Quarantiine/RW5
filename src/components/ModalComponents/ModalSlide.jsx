@@ -6,7 +6,18 @@ const ModalSlide = ({ image, text1, text2, text3, text4, hashTags, tags }) => {
 	const [slideBtnClick2, setSlideBtnClick2] = useState(true);
 	const { setOpenCloseModel } = useOpenCloseModalCtx();
 	const { modalSlideNumber, setModalSlideNumber } = useModalSlideNumberCtx();
-	const [SMSImages] = useModalSlideContext();
+	const [
+		SMSImages1,
+		SMSImages2,
+		SMSImages3,
+		SMSImages4,
+		SMSImages5,
+		SMSImages6,
+		SMSImages7,
+		SMSImages8,
+		SMSImages9,
+		SMSImages,
+	] = useModalSlideContext();
 
 	const forward = () => {
 		setSlideBtnClick(true);
