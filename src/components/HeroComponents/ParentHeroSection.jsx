@@ -21,10 +21,10 @@ const ParentHeroSection = () => {
 	};
 
 	return (
-		<div className="h-fit sm:h-[600px] xl:h-[800px] overflow-hidden relative">
+		<div className="h-fit sm:h-[600px] 2xl:h-[800px] overflow-hidden relative">
 			<div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center text-black h-full w-full">
 				{slideNumber === 1 ? (
-					<div className="bg-[#e5deff] w-full lg:w-[800px] text-center xl:w-full h-full z-[1] flex flex-col justify-center items-center gap-8 pt-24 pb-16 px-5">
+					<div className="bg-[#e5deff] w-full lg:w-[800px] text-center xl:w-full h-full z-[1] flex flex-col justify-center items-center gap-8 pt-10 pb-16 px-5">
 						<h1 className="text-7xl font-medium font-[times-new-roman]">Hydra Booster</h1>
 						<h3 className="text-4xl font-[times-new-roman]">Say Goodbye to Dull Hair</h3>
 						<p className="text-lg w-[67%] text-gray-500 font-extralight text-center">

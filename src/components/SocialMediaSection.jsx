@@ -5,23 +5,14 @@ const SocialMediaSection = () => {
 	const [SMSImages1, SMSImages2, SMSImages3, SMSImages4, SMSImages5, SMSImages6, SMSImages7, SMSImages8, SMSImages9] =
 		useModalSlideContext();
 	const {
-		slideModal1,
 		setSlideModal1,
-		slideModal2,
 		setSlideModal2,
-		slideModal3,
 		setSlideModal3,
-		slideModal4,
 		setSlideModal4,
-		slideModal5,
 		setSlideModal5,
-		slideModal6,
 		setSlideModal6,
-		slideModal7,
 		setSlideModal7,
-		slideModal8,
 		setSlideModal8,
-		slideModal9,
 		setSlideModal9,
 	} = useModalSlideContentCtx();
 

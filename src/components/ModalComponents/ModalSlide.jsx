@@ -34,8 +34,8 @@ const ModalSlide = ({ image, text1, text2, text3, text4, hashTags, tags }) => {
 	};
 
 	return (
-		<div className="modal-container grid grid-cols-1 sm:grid-cols-[60%_40%] z-[202] w-full h-[100%] justify-center items-center gap-0 overflow-hidden overflow-y-scroll">
-			<img className="h-full object-cover" src={image} alt="modal product img" />
+		<div className="modal-container grid grid-cols-1 h-full sm:grid-cols-[60%_40%] z-[202] w-full h-[100%] justify-center items-center gap-0 overflow-hidden overflow-y-scroll">
+			<img className="h-full w-full object-cover" src={image} alt="modal product img" />
 			{/* {loading && <div className="h-full w-full bg-pink-500 animate-pulse duration-[100]"></div>} */}
 
 			<div className="h-full w-full bg-white px-4 flex flex-col justify-start gap-10">

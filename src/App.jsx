@@ -20,15 +20,15 @@ const ModalSlideNumberCtx = createContext();
 
 function Body() {
 	const SMSImages = [
-		"https://scontent.cdninstagram.com/v/t39.30808-6/315590712_5881291738561937_3645521752237890134_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=_4Y12Ej5oAcAX_MPoXY&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AfB-UmoMrrOds_0PY-1l3pcxTW7g67jY7smYIj9_0nsu-g&oe=63A788FF",
-		"https://scontent.cdninstagram.com/v/t39.30808-6/319238325_5951837401507370_7786044835519186172_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=rBOEtr__G10AX-AxBl4&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AfA9xNPAPHlbgrQBB8B2QjsrMmzg-mQxLOBQlBcS7x5wYw&oe=63A2D822",
-		"https://scontent.cdninstagram.com/v/t39.30808-6/315593067_5881302905227487_8342548703236487455_n.png?stp=dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=iRf7VXuGfZoAX9tg78T&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AfAAOjXjzs_Q3dLr0CfVHDryKXCISD3Xhq4eM8q9mGwzvg&oe=63A751DB",
+		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/052622KeratinSmoothDuo_1024x1024.jpg?v=1653588765",
+		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/1080luseta_product_final-9a_1024x1024.jpg?v=1669676735",
+		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/G20LUSETA2010_1024x1024.gif?v=1669760166",
 		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/1Biotin_Collagenduo_1024x1024.jpg?v=1666826360",
 		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/Biotin_Collagen_5259afee-6953-42e6-9a44-29ad12bc4e4b_1024x1024.jpg?v=1666823083s",
 		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/G_20LUSETA_206_1024x1024.gif?v=1653665136",
-		"https://scontent.cdninstagram.com/v/t39.30808-6/319115445_5951955911495519_3108085581204518116_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=5Iuy9nQhFgkAX-aCaRV&_nc_ht=scontent.cdninstagram.com&edm=AEQ6tj4EAAAA&oh=00_AfALsDwwmzNLeR3FUfZL3Ew3rNdT5p7kYOot6PmD0gSnwQ&oe=63A5810E",
-		"https://scontent.cdninstagram.com/v/t39.30808-6/318477295_5944345928923184_4657238263232465832_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=8k6Iwe5rmqwAX-xB17w&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AfCm6lJtc0Ys4DfHoS3oDiDdrGLkpJO8LhgtCJWyF8HtPA&oe=63A34410",
-		"https://scontent.cdninstagram.com/v/t39.30808-6/318236931_5939651536059290_4631408015035128246_n.png?stp=dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=SZXGE4jwDJoAX_uxOLp&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AfCDitiAbd5my0N1_blBugfvCxqJ1VyY7xg7qEvOQZCcmw&oe=63A35A49",
+		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/keratinserum_1024x1024.jpg?v=1669755133",
+		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/BiotinB-Complex_1024x1024.jpg?v=1636159273",
+		"//cdn.shopify.com/s/files/1/0010/9330/4381/products/BiotinBComplexDuo_1024x1024.jpg?v=1632344589",
 	];
 
 	const [openCloseModal, setOpenCloseModel] = useState(false);
