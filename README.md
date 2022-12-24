@@ -5,8 +5,8 @@
 > I am not the original creator of this webiste and I only replicated this website for practice purposes.
 
 ## HELPERS
-* Daniel - 95%
-* ChatGPT - 5%
+* Daniel - 97%
+* ChatGPT - 3%
 
 ## ORIGINAL LINK: https://lusetabeauty.com/
 ## MY REPLICATION: https://react-web-1-dw.vercel.app/
